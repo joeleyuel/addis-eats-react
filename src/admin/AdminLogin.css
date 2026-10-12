@@ -1,0 +1,29 @@
+.admin-login {
+  display: flex;
+  justify-content: center;
+}
+
+.admin-login__card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 36px 32px;
+  max-width: 380px;
+  width: 100%;
+  box-shadow: var(--shadow-card);
+}
+
+.admin-login__card h1 {
+  font-size: 1.4rem;
+  margin-top: 6px;
+}
+
+.admin-login__lead {
+  margin: 10px 0 22px;
+}
+
+.admin-login__hint {
+  margin-top: 16px;
+  font-size: 0.78rem;
+  text-align: center;
+}

@@ -1,0 +1,110 @@
+.checkout-page__grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 30px;
+  align-items: start;
+  margin-top: 20px;
+}
+
+.checkout-section {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.checkout-section h2 {
+  font-size: 1.05rem;
+  margin-bottom: 18px;
+}
+
+.delivery-estimate {
+  font-size: 0.85rem;
+  color: var(--color-success);
+  background: var(--color-success-tint);
+  padding: 10px 14px;
+  border-radius: 10px;
+  margin: 6px 0 0;
+}
+
+.delivery-estimate--muted {
+  color: var(--color-muted);
+  background: var(--color-bg);
+}
+
+.checkout-summary {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 22px;
+  position: sticky;
+  top: 20px;
+}
+
+.checkout-summary h2 {
+  font-size: 1.1rem;
+  margin-bottom: 14px;
+}
+
+.checkout-summary__list {
+  list-style: none;
+  margin: 0 0 14px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.88rem;
+}
+
+.checkout-summary__list li {
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-muted);
+}
+
+.checkout-summary__row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  padding-top: 10px;
+  border-top: 1px solid var(--color-border);
+  margin-top: 6px;
+  color: var(--color-muted);
+}
+
+.checkout-summary__row--total {
+  color: var(--color-ink);
+  font-weight: 800;
+  font-size: 1.15rem;
+  border-top: 2px solid var(--color-border);
+  padding-top: 14px;
+  margin-top: 10px;
+}
+
+.checkout-summary__eta {
+  margin-top: 14px;
+  font-size: 0.82rem;
+  color: var(--color-muted);
+}
+
+.checkout-confirm__total {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.6rem;
+  color: var(--color-primary);
+  margin: 14px 0;
+}
+
+.checkout-confirm__actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 800px) {
+  .checkout-page__grid {
+    grid-template-columns: 1fr;
+  }
+}
